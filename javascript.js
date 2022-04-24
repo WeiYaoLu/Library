@@ -1,6 +1,14 @@
+let popUpForm = document.querySelector(".popUp");
+let newbutton = document.querySelector(".make");
+console.log(newbutton);
+newbutton.addEventListener('click', () => popUpForm.style.display = 'block');
+
+
+
+
+let cards = document.querySelector("cards");
 let myLibrary = [];
-function Book(title,author,pages,read){
-    this.read = false;
+function Book(title,author,pages){
     this.title = title;
     this.author = author;
     this.pages = pages;
@@ -16,3 +24,6 @@ function addToLibrary(){
     myLibrary.push(b);
 }
 
+function makeform(){
+    let newform = document.querySelector
+}

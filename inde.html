@@ -12,121 +12,29 @@
 </head>
 
 <body>
-    <div class="container">
-        <button class="make"> NEW BOOK </button>
-        <br>
-        <div class="cards">
-            <div class="card">
-                <h2>Title</h2>
-                <button> Close</button>
-                Author
-                <br>
-                pages
-                <radio>
-                    
-                </radio>
+    <h1> Library </h1>
+    <div class="button-container">
+        <button class="make"> New Book </button>
+    </div>
+    <div class="popUp">
+        <form action="javascript.js" id="id">
+            New Book
+            <span class="close">&times;</span>
+            <div class="input">
+                    <p><input type="text" id="title" name="title" placeholder="Title"></p>
+                    <p><input type="text" id="author" name="author" placeholder="Author"></p>
+                    <p><input type="text" id="pages" name="pages" placeholder="Pages"></p>
+                </div>
+            <div class="bool">
+                <p><label>read: </label> <input type="checkbox" id="read" name="read" value="Yes"></p>
             </div>
-            <div class="card">
-                <h2>Title</h2>
-                <button> Close</button>
-                Author
-                <br>
-                pages
-                <radio>
-                    
-                </radio>
-            </div><div class="card">
-                <h2>Title</h2>
-                <button> Close</button>
-                Author
-                <br>
-                pages
-                <radio>
-                    
-                </radio>
-            </div><div class="card">
-                <h2>Title</h2>
-                <button> Close</button>
-                Author
-                <br>
-                pages
-                <radio>
-                    
-                </radio>
-            </div><div class="card">
-                <h2>Title</h2>
-                <button> Close</button>
-                Author
-                <br>
-                pages
-                <radio>
-                    
-                </radio>
-            </div><div class="card">
-                <h2>Title</h2>
-                <button> Close</button>
-                Author
-                <br>
-                pages
-                <radio>
-                    
-                </radio>
-            </div><div class="card">
-                <h2>Title</h2>
-                <button> Close</button>
-                Author
-                <br>
-                pages
-                <radio>
-                    
-                </radio>
-            </div><div class="card">
-                <h2>Title</h2>
-                <button> Close</button>
-                Author
-                <br>
-                pages
-                <radio>
-                    
-                </radio>
-            </div><div class="card">
-                <h2>Title</h2>
-                <button> Close</button>
-                Author
-                <br>
-                pages
-                <radio>
-                    
-                </radio>
-            </div><div class="card">
-                <h2>Title</h2>
-                <button> Close</button>
-                Author
-                <br>
-                pages
-                <radio>
-                    
-                </radio>
-            </div><div class="card">
-                <h2>Title</h2>
-                <button> Close</button>
-                Author
-                <br>
-                pages
-                <radio>
-                    
-                </radio>
-            </div><div class="card">
-                <h2>Title</h2>
-                <button> Close</button>
-                Author
-                <br>
-                pages
-                <radio>
-                    
-                </radio>
-            </div>
-        </div>
+            <button type="submit" form="form" id="addBtn">Add</button>
+        </form>
+    </div>
+
+    <div class="cards">
+
+    </div>
 </body>
 
 </html>
