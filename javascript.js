@@ -11,27 +11,28 @@ add.addEventListener('click', addToLibrary);
 let cards = document.querySelector("cards");
 let myLibrary = [];
 function Book(title,author,pages,read){
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
+    this.title = form.title.value;
+    this.author = form.author.value;
+    this.pages = form.pages.value + 'pg';
+    this.read = form.read.checked;
 }
-
+let newBook;
 function addToLibrary(){
     event.preventDefault();
-    popUpForm.display.style = 'none';
+    popUpForm.style.display = 'none';
 
-    let b = new Book(title,author,pages,read);
-    myLibrary.push(b);
+    newBook = new Book(title,author,pages,read);
+    myLibrary.push(newBook);
     setBook();
     updateDisplay();
+    console.table(myLibrary);
     form.reset();
 }
 
 function updateDisplay(){
     const display = document.querySelector(".cards");
-    const books = document.querySelectorAll(".book");
-    books.forEach(book => display.removeChild(book));
+    const card = document.querySelectorAll(".card");
+    card.forEach(card => display.removeChild(card));
 
     for(let i = 0; i < myLibrary.length; i++){
         createBook(myLibrary[i]);
@@ -41,6 +42,7 @@ function updateDisplay(){
 function createBook(book){
     const cards = document.querySelector(".cards");
     const card = document.createElement('div'); 
+    card.classList.add('card');
 
     const title = document.createElement('div');
     title.textContent = book.title;
